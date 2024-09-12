@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AbrarYeasir | Portfolio</title>
+
+        <!-- adding favicon -->
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>"
+        />
+
+        <!-- linking the post css file -->
+        <link rel="stylesheet" href="main.css" />
+
+        <!-- fontawesome kit link -->
+        <script
+            src="https://kit.fontawesome.com/6cd5ed4aa9.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <body class="font-outfit">
+            <header class="bg-gradient-to-b from-gradient to-transparent">
+                <div class="h-5 hidden lg:block"></div>
+
+                <!-- navbar -->
+                <section
+                    id="navbar"
+                    class="max-w-[1140px] mx-auto bg-white flex items-center justify-between py-4 px-5 lg:rounded-lg lg:px-5 shadow-sm"
+                >
+                    <div id="logo" class="text-3xl lg:text-4xl font-semibold">
+                        <a href="#"
+                            >Abrar<span class="text-primary">Yeasir</span></a
+                        >
+                    </div>
+                    <nav>
+                        <ul class="hidden md:flex gap-5 text-lg">
+                            <li class="hover:text-primary">
+                                <a href="#navbar">Home</a>
+                            </li>
+                            <li class="hover:text-primary">
+                                <a href="#about-me">About</a>
+                            </li>
+                            <li class="hover:text-primary">
+                                <a href="#skills">Skills</a>
+                            </li>
+                            <li class="hover:text-primary">
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li class="hover:text-primary">
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a
+                        href="https://www.linkedin.com/in/abraryeasir-ai/"
+                        target="_blank"
+                        class="hidden md:flex border-2 border-primary py-2 px-6 rounded-b-xl rounded-tr-xl gap-3 items-center font-medium text-primary hover:shadow-gradient hover:shadow-lg hover:bg-[#00B7680a]"
+                        >Let's Talk
+                        <img class="h-4" src="./images/top-right.png"
+                    /></a>
+
+                    <button
+                        id="mobile-hamburger-button"
+                        class="block md:hidden text-2xl"
+                        onclick="toggleNavBar()"
+                    >
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <section
+                        id="nav-on-mobile"
+                        class="hidden fixed top-0 left-0 w-screen h-screen bg-white z-20"
+                    >
+                        <div
+                            class="py-4 px-5 flex items-center justify-between"
+                        >
+                            <div
+                                id="logo"
+                                class="text-3xl lg:text-4xl font-semibold"
+                            >
+                                Abrar<span class="text-primary">Yeasir</span>
+                            </div>
+                            <button
+                                id="mobile-hamburger-button"
+                                class="block md:hidden text-3xl"
+                                onclick="toggleNavBar()"
+                            >
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+
+                        <nav>
+                            <ul class="flex flex-col gap-5 text-lg py-5 px-5">
+                                <li class="hover:text-primary mobile-menu-item">
+                                    <a href="#navbar">Home</a>
+                                </li>
+                                <li class="hover:text-primary mobile-menu-item">
+                                    <a href="#about-me">About</a>
+                                </li>
+                                <li class="hover:text-primary mobile-menu-item">
+                                    <a href="#skills">Skills</a>
+                                </li>
+                                <li class="hover:text-primary mobile-menu-item">
+                                    <a href="#projects">Projects</a>
+                                </li>
+                                <li class="hover:text-primary mobile-menu-item">
+                                    <a href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="h-[2px] opacity-30 bg-primary"></div>
+
+                        <a
+                            href="https://www.linkedin.com/in/abraryeasir-ai/"
+                            target="_blank"
+                            class="flex items-center gap-3 px-5 py-5 text-xl"
+                            >Let's Talk
+                            <img class="h-4" src="./images/top-right.png"
+                        /></a>
+                    </section>
+                </section>
+
+                <!-- hero section -->
+                <section
+                    id="bg-wrapper"
+                    class="bg-section-bg bg-no-repeat bg-center bg-cover"
+                >
+                    <div
+                        id="hero-section"
+                        class="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 my-10"
+                    >
+                        <div>
+                            <img
+                                id="hero-image"
+                                src="./images/hero-section-image.png"
+                                alt="Hero Section Image"
+                                class="animate-customBounce"
+                            />
+                        </div>
+                        <div
+                            id="hero-content"
+                            class="px-6 flex flex-col items-center justify-center md:items-start gap-5"
+                        >
+                            <div
+                                class="bg-transparent-bg text-primary w-fit text-sm flex items-center gap-2 px-4 py-1 rounded-md text-center md:text-start"
+                            >
+                                <div class="flex relative w-2.5 h-2.5">
+                                    <div
+                                        class="animate-ping absolute inline-flex h-full w-full bg-primary rounded-full opacity-75"
+                                    ></div>
+                                    <div
+                                        class="relative inline-flex w-2.5 h-2.5 bg-primary rounded-full"
+                                    ></div>
+                                </div>
+                                AVAILABLE FOR WORK
+                            </div>
+
+                            <p
+                                class="text-primary text-2xl md:text-4xl font-medium"
+                            >
+                                Hello, I am Abrar 👋
+                            </p>
+
+                            <div
+                                class="font-bold text-5xl text-center md:text-start md:text-6xl leading-tight"
+                            >
+                                Professional <br class="hidden md:block" />
+                                Web Designer & Soft. Developer
+                            </div>
+
+                            <a
+                                href="https://www.linkedin.com/in/abraryeasir-ai/"
+                                target="_blank"
+                                class="flex border-2 border-primary bg-primary py-2 px-6 rounded-b-xl rounded-tr-xl gap-3 items-center font-medium text-white hover:shadow-green-200 hover:shadow-lg mt-3"
+                                >Hire Me Now
+                                <img
+                                    class="h-4"
+                                    src="./images/top-right-white.png"
+                            /></a>
+                        </div>
+                    </div>
+                </section>
+            </header>
+
+            <main>
+                <!-- about me section -->
+                <section
+                    id="bg-wrapper"
+                    class="bg-section-bg bg-no-repeat bg-center bg-cover"
+                >
+                    <div
+                        id="about-me"
+                        class="max-w-[1140px] mx-auto my-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0"
+                    >
+                        <div
+                            id="about-me-section-content"
+                            class="px-6 flex flex-col justify-center items-center md:items-start gap-5 md:pl-16"
+                        >
+                            <p
+                                class="text-center md:text-start text-2xl font-semibold text-primary"
+                            >
+                                About Me
+                            </p>
+                            <h2
+                                class="text-center md:text-start text-5xl font-medium"
+                            >
+                                It's Me Abrar.
+                            </h2>
+                            <p class="text-xl text-center md:text-justify">
+                                I'm Abrar Yeasir, a professional Web Designer
+                                and Software Developer skilled in Python, React,
+                                and Node. I specialize in creating intuitive,
+                                visually appealing digital experiences that
+                                combine creativity with functionality,
+                                delivering seamless user interactions.
+                            </p>
+                            <a
+                                href="https://www.linkedin.com/in/abraryeasir-ai/"
+                                target="_blank"
+                                class="w-fit flex border-2 border-primary bg-primary py-2 px-6 rounded-b-xl rounded-tr-xl gap-3 items-center font-medium text-white hover:shadow-green-200 hover:shadow-lg mt-3"
+                                >Let's Talk
+                                <img
+                                    class="h-4"
+                                    src="./images/top-right-white.png"
+                            /></a>
+                        </div>
+                        <div id="about-me-image">
+                            <img
+                                src="./images/about-me-section-image.png"
+                                alt="About Me Section Image"
+                                class="animate-customBounce"
+                            />
+                        </div>
+                    </div>
+                </section>
+
+                <!-- skills section -->
+                <section id="skills" class="bg-primary text-white py-24">
+                    <div
+                        id="skill-section"
+                        class="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-3 px-6 md:pl-16"
+                    >
+                        <div
+                            id="skill-content"
+                            class="flex flex-col gap-4 md:col-span-1"
+                        >
+                            <p class="text-2xl">Skills</p>
+                            <h2 class="text-5xl font-medium">
+                                Experience With
+                            </h2>
+                            <p class="font-light text-xl text-justify">
+                                Technologies are just tools. The real magic lies
+                                in how we use them to build impactful products.
+                            </p>
+                        </div>
+
+                        <div
+                            id="skills-icon"
+                            class="md:col-span-2 pl-0 md:pl-8 pt-8 md:pt-0"
+                        >
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                                <div
+                                    class="bg-white rounded-xl aspect-square flex items-center justify-center hover:-translate-y-2 transition-all duration-150"
+                                >
+                                    <img
+                                        src="./images/skills-icon/00_html.png"
+                                        alt="HTML logo"
+                                    />
+                                </div>
+                                <div
+                                    class="bg-white rounded-xl aspect-square flex items-center justify-center hover:-translate-y-2 transition-all duration-150"
+                                >
+                                    <img
+                                        src="./images/skills-icon/01_css.png"
+                                        alt="HTML logo"
+                                    />
+                                </div>
+                                <div
+                                    class="bg-white rounded-xl aspect-square flex items-center justify-center hover:-translate-y-2 transition-all duration-150"
+                                >
+                                    <img
+                                        src="./images/skills-icon/02_js.png"
+                                        alt="HTML logo"
+                                    />
+                                </div>
+                                <div
+                                    class="bg-white rounded-xl aspect-square flex items-center justify-center hover:-translate-y-2 transition-all duration-150"
+                                >
+                                    <img
+                                        src="./images/skills-icon/03_tailwind.png"
+                                        alt="HTML logo"
+                                    />
+                                </div>
+                                <div
+                                    class="bg-white rounded-xl aspect-square flex items-center justify-center hover:-translate-y-2 transition-all duration-150"
+                                >
+                                    <img
+                                        src="./images/skills-icon/04_react.png"
+                                        alt="HTML logo"
+                                    />
+                                </div>
+                                <div
+                                    class="bg-white rounded-xl aspect-square flex items-center justify-center hover:-translate-y-2 transition-all duration-150"
+                                >
+                                    <img
+                                        src="./images/skills-icon/05_node.png"
+                                        alt="HTML logo"
+                                    />
+                                </div>
+                                <div
+                                    class="bg-white rounded-xl aspect-square flex items-center justify-center hover:-translate-y-2 transition-all duration-150"
+                                >
+                                    <img
+                                        src="./images/skills-icon/06_express.png"
+                                        alt="HTML logo"
+                                    />
+                                </div>
+                                <div
+                                    class="bg-white rounded-xl aspect-square flex items-center justify-center hover:-translate-y-2 transition-all duration-150"
+                                >
+                                    <img
+                                        src="./images/skills-icon/07_python.png"
+                                        alt="HTML logo"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- projects section -->
+                <section
+                    id="projects"
+                    class="bg-section-bg bg-no-repeat bg-center bg-cover py-16"
+                >
+                    <div
+                        id="project-section"
+                        class="max-w-[1140px] mx-auto px-6 md:px-0"
+                    >
+                        <h2
+                            class="text-center text-primary text-3xl font-medium"
+                        >
+                            Projects
+                        </h2>
+
+                        <div
+                            id="card-wrapper"
+                            class="grid grid-cols-1 md:grid-cols-3 gap-7 mt-5"
+                        >
+                            <div
+                                class="card bg-white p-6 shadow-md rounded-b-xl rounded-tr-xl flex flex-col gap-4 hover:shadow-gradient hover:-translate-y-2 transition-all"
+                            >
+                                <div
+                                    class="image-container border-2 rounded-lg border-primary overflow-hidden h-48"
+                                >
+                                    <img
+                                        src="./images/project-thumbnails/project_01.png"
+                                        alt="Project Thumbnail"
+                                        class="w-full"
+                                    />
+                                </div>
+                                <h3 class="text-3xl font-medium">
+                                    Developers Portfolio for Abrar Yeasir
+                                </h3>
+                                <div class="tech-used flex gap-2 items-center">
+                                    <div
+                                        class="bg-transparent-bg text-primary w-fit text-sm px-3 py-0.5 rounded text-start"
+                                    >
+                                        HTML
+                                    </div>
+                                    <div
+                                        class="bg-transparent-bg text-primary w-fit text-sm px-3 py-0.5 rounded text-start"
+                                    >
+                                        CSS
+                                    </div>
+                                    <div
+                                        class="bg-transparent-bg text-primary w-fit text-sm px-3 py-0.5 rounded text-start"
+                                    >
+                                        JavaScript
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-group w-full flex justify-between"
+                                >
+                                    <a
+                                        href="https://www.linkedin.com/in/abraryeasir-ai/"
+                                        target="_blank"
+                                        class="w-fit flex border-2 border-primary py-1.5 px-4 rounded-b-xl rounded-tr-xl gap-3 items-center font-medium text-primary hover:shadow-green-200 hover:shadow-md mt-3 hover:bg-[#00B7680a]"
+                                        >View Code
+                                        <img
+                                            class="h-4"
+                                            src="./images/top-right.png"
+                                    /></a>
+                                    <a
+                                        href="https://www.linkedin.com/in/abraryeasir-ai/"
+                                        target="_blank"
+                                        class="w-fit flex border-2 border-primary bg-primary py-1.5 px-4 rounded-b-xl rounded-tr-xl gap-3 items-center font-medium text-white hover:shadow-green-200 hover:shadow-md mt-3"
+                                        >Visit Site
+                                        <img
+                                            class="h-4"
+                                            src="./images/top-right-white.png"
+                                    /></a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="card bg-white p-6 shadow-md rounded-b-xl rounded-tr-xl flex flex-col gap-4 hover:shadow-gradient hover:-translate-y-2 transition-all"
+                            >
+                                <div
+                                    class="image-container border-2 rounded-lg border-primary overflow-hidden h-48"
+                                >
+                                    <img
+                                        src="./images/project-thumbnails/project_01.png"
+                                        alt="Project Thumbnail"
+                                        class="w-full"
+                                    />
+                                </div>
+                                <h3 class="text-3xl font-medium">
+                                    Developers Portfolio for Abrar Yeasir
+                                </h3>
+                                <div class="tech-used flex gap-2 items-center">
+                                    <div
+                                        class="bg-transparent-bg text-primary w-fit text-sm px-3 py-0.5 rounded text-start"
+                                    >
+                                        HTML
+                                    </div>
+                                    <div
+                                        class="bg-transparent-bg text-primary w-fit text-sm px-3 py-0.5 rounded text-start"
+                                    >
+                                        CSS
+                                    </div>
+                                    <div
+                                        class="bg-transparent-bg text-primary w-fit text-sm px-3 py-0.5 rounded text-start"
+                                    >
+                                        JavaScript
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-group w-full flex justify-between"
+                                >
+                                    <a
+                                        href="https://www.linkedin.com/in/abraryeasir-ai/"
+                                        target="_blank"
+                                        class="w-fit flex border-2 border-primary py-1.5 px-4 rounded-b-xl rounded-tr-xl gap-3 items-center font-medium text-primary hover:shadow-green-200 hover:shadow-md mt-3 hover:bg-[#00B7680a]"
+                                        >View Code
+                                        <img
+                                            class="h-4"
+                                            src="./images/top-right.png"
+                                    /></a>
+                                    <a
+                                        href="https://www.linkedin.com/in/abraryeasir-ai/"
+                                        target="_blank"
+                                        class="w-fit flex border-2 border-primary bg-primary py-1.5 px-4 rounded-b-xl rounded-tr-xl gap-3 items-center font-medium text-white hover:shadow-green-200 hover:shadow-md mt-3"
+                                        >Visit Site
+                                        <img
+                                            class="h-4"
+                                            src="./images/top-right-white.png"
+                                    /></a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="card bg-white p-6 shadow-md rounded-b-xl rounded-tr-xl flex flex-col gap-4 hover:shadow-gradient hover:-translate-y-2 transition-all"
+                            >
+                                <div
+                                    class="image-container border-2 rounded-lg border-primary overflow-hidden h-48"
+                                >
+                                    <img
+                                        src="./images/project-thumbnails/project_01.png"
+                                        alt="Project Thumbnail"
+                                        class="w-full"
+                                    />
+                                </div>
+                                <h3 class="text-3xl font-medium">
+                                    Developers Portfolio for Abrar Yeasir
+                                </h3>
+                                <div class="tech-used flex gap-2 items-center">
+                                    <div
+                                        class="bg-transparent-bg text-primary w-fit text-sm px-3 py-0.5 rounded text-start"
+                                    >
+                                        HTML
+                                    </div>
+                                    <div
+                                        class="bg-transparent-bg text-primary w-fit text-sm px-3 py-0.5 rounded text-start"
+                                    >
+                                        CSS
+                                    </div>
+                                    <div
+                                        class="bg-transparent-bg text-primary w-fit text-sm px-3 py-0.5 rounded text-start"
+                                    >
+                                        JavaScript
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-group w-full flex justify-between"
+                                >
+                                    <a
+                                        href="https://www.linkedin.com/in/abraryeasir-ai/"
+                                        target="_blank"
+                                        class="w-fit flex border-2 border-primary py-1.5 px-4 rounded-b-xl rounded-tr-xl gap-3 items-center font-medium text-primary hover:shadow-green-200 hover:shadow-md mt-3 hover:bg-[#00B7680a]"
+                                        >View Code
+                                        <img
+                                            class="h-4"
+                                            src="./images/top-right.png"
+                                    /></a>
+                                    <a
+                                        href="https://www.linkedin.com/in/abraryeasir-ai/"
+                                        target="_blank"
+                                        class="w-fit flex border-2 border-primary bg-primary py-1.5 px-4 rounded-b-xl rounded-tr-xl gap-3 items-center font-medium text-white hover:shadow-green-200 hover:shadow-md mt-3"
+                                        >Visit Site
+                                        <img
+                                            class="h-4"
+                                            src="./images/top-right-white.png"
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- contact section -->
+                <section
+                    id="contact"
+                    class="max-w-[1140px] mx-auto px-6 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-8 py-12"
+                >
+                    <div class="flex flex-col justify-center gap-4">
+                        <p class="text-2xl text-primary font-medium">
+                            Contact Me
+                        </p>
+                        <h2 class="text-5xl font-semibold leading-none">
+                            Let's Discuss Your <br class="hidden md:block" />
+                            Project
+                        </h2>
+                        <a
+                            href="https://wa.me/1860700650"
+                            target="_blank"
+                            class="flex items-center gap-4 mt-8"
+                        >
+                            <img
+                                src="./images/icons/whatsapp-icon.png"
+                                alt="WhatsApp Icon"
+                                class="h-12 md:h-auto"
+                            />
+                            <span
+                                class="text-2xl md:text-3xl font-medium text-primary"
+                                >+8801860-700650</span
+                            >
+                        </a>
+                        <a
+                            href="https://wa.me/1860700650"
+                            target="_blank"
+                            class="flex items-center gap-4"
+                        >
+                            <img
+                                src="./images/icons/mail-icon.png"
+                                alt="Mail Icon"
+                                class="h-12 md:h-auto"
+                            />
+                            <span
+                                class="text-2xl md:text-3xl font-medium text-primary"
+                                >iamabraryeasir@gmail.com</span
+                            >
+                        </a>
+                    </div>
+                    <div
+                        class="hidden md:flex items-center justify-center p-10"
+                    >
+                        <img src="./images/contuct-image.png" alt="" />
+                    </div>
+                </section>
+            </main>
+
+            <footer class="bg-primary text-white py-12">
+                <div
+                    class="max-w-[1140px] mx-auto px-6 md:px-0 grid grid-cols-1 md:grid-cols-2"
+                >
+                    <div>
+                        <a href="#" class="text-2xl font-medium">AbrarYeasir</a>
+                        <p
+                            class="text-xl mt-8 max-w-sm text-justify font-light"
+                        >
+                            Transforming concepts into reality with innovative
+                            design and robust development, committed to creating
+                            impactful digital experiences.
+                        </p>
+                    </div>
+
+                    <div
+                        class="flex gap-5 items-center md:items-end justify-center mt-8 md:mt-0 md:justify-end"
+                    >
+                        <a
+                            href="https://www.linkedin.com/in/abraryeasir-ai/"
+                            target="_blank"
+                        >
+                            <img
+                                src="./images/icons/linkedin-icon.png"
+                                alt="linkedin-icon"
+                            />
+                        </a>
+                        <a
+                            href="https://github.com/iamabraryeasir"
+                            target="_blank"
+                        >
+                            <img
+                                src="./images/icons/github-icon.png"
+                                alt="linkedin-icon"
+                            />
+                        </a>
+                        <a
+                            href="https://www.facebook.com/abraryeasir.main"
+                            target="_blank"
+                        >
+                            <img
+                                src="./images/icons/facebook-icon.png"
+                                alt="linkedin-icon"
+                            />
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="h-1 max-w-[1140px] mx-auto rounded-lg mt-14 mb-9 bg-white opacity-80"
+                ></div>
+
+                <p class="text-center text-xl font-light px-6 md:px-0">
+                    Crafted with passion and code. ©
+                    <a href="https://www.linkedin.com/in/abraryeasir-ai/"
+                        >Abrar Yeasir</a
+                    >
+                    2024. All rights reserved.
+                </p>
+            </footer>
+            <!-- linking the js file -->
+            <script src="script.js"></script>
+        </body>
+    </body>
+</html>
