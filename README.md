@@ -7,4 +7,4 @@ Tech Used:
 -   JavaScript
 -   Tailwind CSS
 
-Live Site Link: [https://abraryeasir.netlify.app/](https://abraryeasir.netlify.app/)
+Live Site Link: [https://iamabraryeasir.netlify.app/](https://iamabraryeasir.netlify.app/)
